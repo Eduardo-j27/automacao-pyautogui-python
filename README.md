@@ -1,78 +1,29 @@
-# 🚀 Automação de Cadastro de Produtos com Python
+# 🚀 Automação de Tarefas e Bots com Python
 
-Este projeto automatiza o processo de **login** e **cadastro de produtos** em um sistema web usando Python e arquivos CSV.  
-O objetivo é substituir tarefas manuais repetitivas e tornar o processo muito mais rápido, seguro e eficiente.
-
----
-
-## 🖥️ Demonstração (GIFs/Imagens)
-
-### 🔐 Login Automático  
-<img src="images/login.gif" width="550"/>
-
-### 📝 Preenchimento Automático  
-<img src="images/cadastro.gif" width="550"/>
-
----
+Este projeto automatiza o processo de login e cadastro em massa de produtos em um sistema web. Ele substitui tarefas manuais repetitivas por um processo autônomo, garantindo velocidade e eliminando erros humanos de digitação.
 
 ## 🛠️ Tecnologias Utilizadas
+* **Python 3.x**: Linguagem principal.
+* **Pandas**: Para manipulação inteligente de bases de dados.
+* **PyAutoGUI**: Para automação de interface gráfica (cliques, digitação e comandos de teclado).
+* **Time/OS**: Para gerenciamento de intervalos e leitura de diretórios.
 
-- **Python 3**
-- **Pandas** – leitura e manipulação do arquivo CSV  
-- **PyAutoGUI** – automação de cliques, teclas e digitação  
-- **Time** – pausas e sincronização  
-- **Opera GX** (navegador utilizado para a automação)
+## 📋 Diferenciais do Projeto
+* **Versatilidade de Dados**: O script foi desenvolvido para ser flexível. Ele identifica automaticamente e processa dados tanto de arquivos **CSV** quanto de planilhas **Excel (.xlsx)**.
+* **Segurança de Execução**: Utiliza pausas estratégicas (`pyautogui.PAUSE`) para garantir que o sistema acompanhe a velocidade dos comandos.
+* **Escalabilidade**: Pronto para cadastrar centenas de itens em poucos minutos.
 
----
+## ⚙️ Como funciona
+1. **Abertura**: O bot inicia o navegador (configurado para Opera/Chrome).
+2. **Navegação**: Acessa automaticamente a URL do sistema de gerenciamento.
+3. **Autenticação**: Realiza o login com as credenciais fornecidas.
+4. **Loop de Cadastro**: 
+    * Lê a base de dados (CSV ou Excel) via Pandas.
+    * Percorre cada linha da tabela.
+    * Preenche os campos (Código, Marca, Tipo, Categoria, Preço, etc.) usando comandos de teclado e mouse.
+    * Envia os dados e repete o processo até o fim da lista.
 
-## 📂 Estrutura do Projeto
-
-
----
-
-## 🔍 Como o Script Funciona
-
-- Abre o navegador automaticamente  
-- Acessa o sistema pelo link configurado  
-- Insere e-mail e senha no formulário de login  
-- Carrega os dados do arquivo `produtos.csv`  
-- Preenche cada campo do sistema (código, marca, tipo, categoria, preço, custo, observações)  
-- Envia o cadastro e passa para o próximo produto  
-- Finaliza após cadastrar todos os produtos automaticamente
-
----
-
-## ▶️ Como Executar o Projeto
-
-### 1️⃣ Instale as dependências:
-
-
-### 2️⃣ Coloque o arquivo `produtos.csv` dentro da mesma pasta do script.
-
-### 3️⃣ Execute o projeto:
-
-
-⚠️ **Atenção:**  
-Não mova o mouse enquanto a automação estiver rodando, pois o PyAutoGUI poderá falhar.
-
----
-
-## 📸 Prints Reais
-
-| Ação | Imagem |
-|------|--------|
-| Login automático | <img src="images/login.png" width="350"/> |
-| Cadastro de produtos | <img src="images/form.png" width="350"/> |
-
----
-
-## 🤝 Contribuição
-
-Sugestões, melhorias, issues e PRs são sempre bem-vindos.
-
----
-
-## 🏆 Autor
-
-**Eduardo**  
-Automação • Python • Dados  
+## 🚀 Como executar
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPO.git](https://github.com/SEU_USUARIO/NOME_DO_REPO.git)
