@@ -26,4 +26,16 @@ Este projeto automatiza o processo de login e cadastro em massa de produtos em u
 ## 🚀 Como executar
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPO.git](https://github.com/SEU_USUARIO/NOME_DO_REPO.git)
+   git clone https://github.com/Eduardo-j27/automacao-pyautogui-python.git
+
+   
+---
+
+# 👍 Dica rápida
+
+Depois de clonar, você pode entrar na pasta e rodar:
+
+```bash
+cd automacao-pyautogui-python
+pip install pyautogui pandas
+python automacao.py
